@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rstory - Tokenized Access to Digital Goods ARTABILLIES Addition</title>
+    <meta name="description" content="Rstory is a crypto token built on EOS and Ethereum.">
+    <meta name="author" content="Mark Bailey">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+    <script src="https://rstory.mypinata.cloud/ipfs/QmRRRaytjur3gspxa9mUxaxLQhW6A19qRvp4TFweJfACkn"></script>
+    <script src="https://rstory.mypinata.cloud/ipfs/QmPrgG4X6sX3CHLLgrcQU8H8VTqh5mWqWfP6KLtfSfYKxc"></script>
+    <script src="https://unpkg.com/anchor-link@3"></script>
+    <script src="https://unpkg.com/anchor-link-browser-transport@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.8/dist/ethers.umd.min.js"></script>
+    <meta property="og:title" content="Rstory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rstory cryptocurrency on EOS and ETH">
+    <meta property="og:image" content="logo180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: #ff6347;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+}
+
+header h1 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+#loading {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #ccc;
+    font-style: italic;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #e55347;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    margin: 15px;
+    background-color: #444;
+    border: 2px solid #555;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item p {
+    padding: 15px;
+    margin: 0;
+    background-color: #222;
+    border-top: 1px solid #333;
+}
+
+.gallery-item p.title {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: bold;
+    color: #ff6347;
+    font-size: 1.4em;
+}
+
+.gallery-item p.description {
+    color: #ddd;
+    font-size: 1.1em;
+    line-height: 1.4;
+    min-height: 150px; /* Ensure consistent height for grey bars */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    .gallery-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery-item {
+        width: 30%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rstory ARTABILLIES Addition</h1>
+        <img src="logo180.png" alt="Rstory logo" />
+    </header>
+    <main>
+        <div class="content">
+            <p>Rstory is a crypto token with zero decimals that operates on multiple blockchains. Rstory tokens are called tudes. Each one represents an indivisible unit of gratitude.</p>
+            <p>The symbol for <a href="https://etherscan.io/token/0xa9deffb371dd9c7fd2cfc6676cdb3bc394b45a42">Rstory on Ethereum</a> is TUDE. The contract address is 0xa9deffb371dd9c7fd2cfc6676cdb3bc394b45a42. The symbol for Rstory on EOS is RSTORY, created by the rstorytokens account. It can be viewed on <a href="https://bloks.io/tokens/RSTORY-eos-rstorytokens">Blocks.io here</a>. Read the revised <a href="https://rstory.io/rstory-whitepaper.pdf">whitepaper here</a>. Announcements can be found on the official <a href="https://hive.blog/@rstory">Rstory communication channel</a>. Join us <a href="https://t.me/+m-WEaUc7Ud8yY2Qx">on Telegram</a> to learn more.</p>
+            <div id="loading">Page loading...</div>
+            <p>Possession of an Rstory token grants the bearer the right to access electronic copies of Mark Bailey's science fiction novels for free. There are 7 of these novels currently available. Purchasing them all on Amazon would cost in excess of $30.</p>
+            <p>Click the button below to connect your Anchor wallet or MetaMask wallet. If there's at least one Rstory token in your wallet, the PDF links below will become active after authentication. To buy Rstory with EOS on Alcor Exchange, <a href="https://eos.alcor.exchange/trade/rstory-rstorytokens_eos-eosio.token">click here</a>.</p>
+        </div>
+        <button id="read-btn">Connect Anchor</button>
+        <button id="read-metamask">Connect MetaMask</button>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="file:///Users/freeninja/Desktop/Do you do Dabs.jpg" alt="Artwork 1">
+                <p class="title">DABS?</p>
+                <p class="description">A distinguished gentleman with a top hat and monocle engages in cannabis dabs, holding a gooey dab tool. The psychedelic, rainbow-filled scene is humorous and whimsical, featuring a speech window asking, “Do you do Dobbs?”</p>
+            </div>
+            <div class="gallery-item">
+                <img src="file:///Users/freeninja/Desktop/Do you do Dobbs1.jpg" alt="Artwork 2">
+                <p class="title">DOBBS?</p>
+                <p class="description">A sophisticated man in a top hat and monocle unexpectedly does cannabis dabs, holding a gooey dab tool. The psychedelic, colorful scene humorously contrasts his highbrow appearance with a speech bubble asking, “Do you do Dobbs?”</p>
+            </div>
+            <div class="            gallery-item">
+                <img src="file:///Users/freeninja/Desktop/Do you do Dobbs2.jpg" alt="Artwork 3">
+                <p class="title">DO YOU?</p>
+                <p class="description">A gentleman in a top hat and monocle indulges in cannabis dabs, holding a gooey dab tool. The vibrant, psychedelic scene humorously features a speech window asking, “Do you do Dobbs?”</p>
+            </div>
+            <div class="gallery-item">
+                <img src="file:///Users/freeninja/Desktop/Do you do Dobbs3.jpg" alt="Artwork 4">
+                <p class="title">DO?</p>
+                <p class="description">A sophisticated man with a top hat and monocle does cannabis dabs, holding a gooey dab tool. The colorful, psychedelic scene humorously contrasts his aristocratic appearance with a speech window asking, “Do you do Dobbs?”</p>
+            </div>
+            <div class="gallery-item">
+                <img src="file:///Users/freeninja/Desktop/Do you do Dobbs2.jpg" alt="Artwork 5">
+                <p class="title">YOU DOBBS?</p>
+                <p class="description">A gentleman with a top hat and monocle engages in cannabis dabs, holding a gooey dab tool. The vibrant, psychedelic scene humorously contrasts his sophistication with a speech window asking, “Do you do Dobbs?”</p>
+            </div>
+            <div class="gallery-item">
+                <img src="file:///Users/freeninja/Desktop/Do you do Dobbs4.jpg" alt="Artwork 6">
+                <p class="title">DO YOU DO DOBBS?</p>
+                <p class="description">A distinguished gentleman in a top hat and monocle does cannabis dabs, holding a gooey dab tool. The whimsical, psychedelic scene humorously features a speech window asking, “Do you do Dobbs?”</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const dapp = "rstory";
+        let login_use = "";
+        let wallet_userAccount = "none";
+        let wallet_session = null;
+
+        const eos = new waxjs.WaxJS({
+            rpcEndpoint: 'https://eos.greymass.com'
+        });
+
+        const transport = new AnchorLinkBrowserTransport();
+        const anchorLink = new AnchorLink({
+            transport,
+            chains: [{
+                chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906',
+                nodeUrl: 'https://eos.greymass.com',
+            }]
+        });
+
+        function loginEos(anchor) {
+            login_use = anchor;
+            if (anchor) {
+                login_anchor();
+            } else {
+                login_eosjs().then(function (retorno) {
+                    wallet_userAccount = retorno;
+                    checkToken();
+                });
+            }
+        }
+
+        function login_anchor() {
+            anchorLink.login(dapp).then((result) => {
+                wallet_session = result.session;
+                wallet_userAccount = wallet_session.auth.actor;
+                checkToken();
+            }).catch(error => {
+                console.error("Anchor login failed:", error);
+            });
+        }
+
+        async function login_eosjs() {
+            try {
+                let userAccount = await eos.login();
+                return userAccount;
+            } catch (e) {
+                document.getElementById("loading").innerHTML = e.message;
+                return false;
+            }
+        }
+
+        function checkToken() {
+            const eosApiUrl = "https://eos.eosphere.io/";
+            const TokenContract = "rstorytokens";
+            const TokenSymbol = "RSTORY";
+            const jsonData = JSON.stringify({
+                "json": true,
+                "code": TokenContract,
+                "scope": wallet_userAccount,
+                "table": "accounts",
+                "limit": 10
+            });
+
+            fetch(eosApiUrl + "v1/chain/get_table_rows", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: jsonData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    let TokenFound = false;
+                    data.rows.forEach(value => {
+                        if (value.balance && value.balance.includes(TokenSymbol)) {
+                            TokenFound = true;
+                            reveal();
+                            document.getElementById("loading").innerHTML = "You have " + value.balance;
+                        }
+                    });
+                    if (!TokenFound) {
+                        document.getElementById("loading").innerHTML = "You must possess RSTORY to access the material";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error checking token:", error);
+                });
+        }
+
+        async function connectMetaMask() {
+            if (typeof window.ethereum !== 'undefined') {
+                try {
+                    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                    handleAccountsChanged(accounts);
+                } catch (error) {
+                    if (error.code === 4001) {
+                        console.log('Please connect to MetaMask.');
+                    } else {
+                        console.error("MetaMask connection error:", error);
+                    }
+                }
+            } else {
+                alert('MetaMask is not installed. Please install MetaMask to use this feature.');
+            }
+        }
+
+        function handleAccountsChanged(accounts) {
+            if (accounts.length === 0) {
+                console.log('Please connect to MetaMask.');
+            } else {
+                const account = accounts[0];
+                checkMetaMaskToken(account);
+            }
+        }
+
+        async function checkMetaMaskToken(account) {
+            const contractAddress = '0xa9deffb371dd9c7fd2cfc6676cdb3bc394b45a42';
+            const abi = [
+                {
+                    "constant": true,
+                    "inputs": [{ "name": "_owner", "type": "address" }],
+                    "name": "balanceOf",
+                    "outputs": [{ "name": "balance", "type": "uint256" }],
+                    "type": "function"
+                }
+            ];
+
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const contract = new ethers.Contract(contractAddress, abi, provider);
+
+            try {
+                const balance = await contract.balanceOf(account);
+                if (balance.gt(0)) {
+                    reveal();
+                    document.getElementById('loading').innerHTML = `You have ${ethers.utils.formatUnits(balance, 18)} TUDEs.`;
+                } else {
+                    document.getElementById('loading').innerHTML = 'You must possess TUDE to access the material';
+                }
+            } catch (error) {
+                console.error("Error checking MetaMask token:", error);
+            }
+        }
+
+        document.getElementById('read-btn').addEventListener('click', () => loginEos(true));
+        document.getElementById('read-metamask').addEventListener('click', connectMetaMask);
+
+        function reveal() {
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.classList.add('reveal');
+            });
+        }
+    </script>
+</body>
+</html>
