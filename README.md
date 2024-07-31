@@ -1,3 +1,3 @@
 # Artabillies-Dab-Product
-Artabillies DOBB Product to be on Rstory
-Theres a simplified version Dab-product.html and one with an adtempt to Tokenize DABGATE.html
+Artabillies DAB DOBBS Product Gallery to be on Rstory
+Theres a simplified version ArtabilliesDABproduct.html and one with an adtempt to Tokenize DABGATE.html
