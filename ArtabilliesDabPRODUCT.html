@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Well Do Ya?</title>
+    <title>{{Page_Title}}</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -84,43 +84,43 @@
     </style>
 </head>
 <body>
-    <h1>Well Do Ya?</h1>
+    <h1>{{Gallery_Title}}</h1>
     <div class="gallery">
         <div class="gallery-item">
-            <img src= "../Dobbs_product/Dobbs_High_Res/Dobbs_High_Res_png/Do_You_Do_Dobbs1.png" alt="Artwork 1">
-            <p class="title">DABS?</p>
-            <p class="description"> A distinguished gentleman with a top hat and monocle does cannabis dabs in a whimsical, psychedelic scene, humorously asking, “Do you do Dobbs?”.</p>
+            <img src="{{Image1_PATH}}" alt="{{Image1_Alt}}">
+            <p class="title">{{Image1_Title}}</p>
+            <p class="description">{{Image1_Description}}</p>
         </div>
         <div class="gallery-item">
-            <img src="../Dobbs_product/Dobbs_High_Res/Dobbs_High_Res_png/Do_You_Do_Dobbs2.png" alt="Artwork 2">
-            <p class="title">DOBBS?</p>
-            <p class="description"> A sophisticated man in a top hat and monocle humorously contrasts his highbrow appearance by doing cannabis dabs in a colorful, psychedelic scene, asking, “Do you do Dobbs?.</p>
+            <img src="{{Image2_PATH}}" alt="{{Image2_Alt}}">
+            <p class="title">{{Image2_Title}}</p>
+            <p class="description">{{Image2_Description}}</p>
         </div>
         <div class="gallery-item">
-            <img src="../Dobbs_product/Dobbs_High_Res/Dobbs_High_Res_png/Do_You_Do_Dobbs3.png" alt="Artwork 3">
-            <p class="title">DO YOU?</p>
-            <p class="description"> A gentleman in a top hat and monocle indulges in cannabis dabs in a vibrant, psychedelic scene, humorously asking, “Do you do Dobbs?”.</p>
+            <img src="{{Image3_PATH}}" alt="{{Image3_Alt}}">
+            <p class="title">{{Image3_Title}}</p>
+            <p class="description">{{Image3_Description}}</p>
         </div>
         <div class="gallery-item">
-            <img src="../Dobbs_product/Dobbs_High_Res/Dobbs_High_Res_png/Do_You_Do_Dobbs4.png" alt="Artwork 4">
-            <p class="title">DO?</p>
-            <p class="description"> A sophisticated man with a top hat and monocle does cannabis dabs in a colorful, psychedelic scene, humorously asking, “Do you do Dobbs?”.</p>
+            <img src="{{Image4_PATH}}" alt="{{Image4_Alt}}">
+            <p class="title">{{Image4_Title}}</p>
+            <p class="description">{{Image4_Description}}</p>
         </div>
         <div class="gallery-item">
-            <img src="../Dobbs_product/Dobbs_High_Res/Dobbs_High_Res_png/Do_You_Do_Dobbs5.png" alt="Artwork 5">
-            <p class="title">YOU?</p>
-            <p class="description"> A gentleman with a top hat and monocle engages in cannabis dabs in a vibrant, psychedelic scene, humorously asking, “Do you do Dobbs?”.</p>
+            <img src="{{Image5_PATH}}" alt="{{Image5_Alt}}">
+            <p class="title">{{Image5_Title}}</p>
+            <p class="description">{{Image5_Description}}</p>
         </div>
         <div class="gallery-item">
-            <img src="../Dobbs_product/Dobbs_High_Res/Dobbs_High_Res_png/Do_You_Do_Dobbs6.png" alt="Artwork 6">
-            <p class="title">DO YOU DO DOBBS?</p>
-            <p class="description"> A distinguished gentleman in a top hat and monocle does cannabis dabs in a whimsical, psychedelic scene, humorously asking, “Do you do Dobbs?”.</p>
+            <img src="{{Image6_PATH}}" alt="{{Image6_Alt}}">
+            <p class="title">{{Image6_Title}}</p>
+            <p class="description">{{Image6_Description}}</p>
         </div>
     </div>
     <script>
         document.querySelectorAll('.gallery-item').forEach(item => {
             item.addEventListener('click', () => {
-                alert('Item clicked!');
+                alert('{{Alert_Message}}');
             });
         });
     </script>
