@@ -10,7 +10,7 @@ This gallery is more than a space to view art; it is a dynamic experience that m
 
 Understanding the Tokenized Gate: RSTORY and TUDE
 
-RSTORY is more than just a cryptocurrency; it is a and movement that fosters creative collaborations in the digital art world. Available on the EOS network through the Anchor wallet, the RSTORY token grants access to exclusive content and experiences within this gallery. Similarly, the TUDE token operates on the Ethereum network via MetaMask, providing global accessibility to DeJahn's digital art offerings.
+RSTORY is more than just a cryptocurrency; it is a movement that fosters creative collaborations in the digital art world. Available on the EOS network through the Anchor wallet, the RSTORY token grants access to exclusive content and experiences within this gallery. Similarly, the TUDE token operates on the Ethereum network via MetaMask, providing global accessibility to DeJahn's digital art offerings.
 
 Unlocking DeJahn’s Art: A Step-by-Step Process
 
